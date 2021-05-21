@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="assets/styles/index.css">
   </head>
   <body>
-    <section id="header">
-      <h1>Volleyball Stat Tracker</h1>
-    </section>
+    {{ template "navbar" }}
 
     <section>
       {{ template "counter" . }}
     </section>
+
+    <section>
+      <h2>This is the stats section</h2>
+    </section>
     
-    <img src="assets/image.jpeg" />
+    <a href="/player">Click ME</a>
 
     <script src="assets/js/main.js"></script>
   </body>
